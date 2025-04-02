@@ -13,9 +13,7 @@ const afterCursor = posts[0]?.id
 ---
 
 <Layout channel={channel} id="main-container">
-  <slot name="header">
-    <Header channel={channel} />
-  </slot>
+ 
   <div class="items">
     {posts.map((post) => <Item post={post} isItem={isItem} />)}
   </div>
