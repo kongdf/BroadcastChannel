@@ -10,7 +10,7 @@ import backToTopIcon from '../assets/back-to-top.svg'
 const { SITE_URL, RSS_URL, RSS_PREFIX } = Astro.locals
 const { channel } = Astro.props
 
-const locale = getEnv(import.meta.env, Astro, 'LOCALE')
+const locale = 'zh-cn'
 
 const seo = channel?.seo
 const reqPathname = Astro.url.pathname.replace(/\/$/, '')
