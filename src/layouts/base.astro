@@ -93,8 +93,7 @@ const navs = (getEnv(import.meta.env, Astro, 'NAVS') || '')
   </head>
 
   <body style="width: 99%;">
-    <slot />
- 
+    <slot /> 
     <Fragment set:html={FOOTER_INJECT} />
   </body>
 </html>
