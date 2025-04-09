@@ -335,7 +335,7 @@ audio::-webkit-media-controls-panel {
 
 .text-box {
   border-left: 2px solid var(--border-color);
-padding: 20px 0;
+padding: 0px 0;
   font-size: 16px;
   line-height: 1.6;
   margin-left: 3px;
@@ -354,6 +354,7 @@ padding: 20px 0;
   line-height: 1;
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .time-box > .dot {
