@@ -1,7 +1,10 @@
 :root {
-  --background-color: #f4f1ec;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --background-color: #090e13;
   --foreground-color: #000000;
-  --highlight-color: orangered;
+  --highlight-color: #63b3ff;
   --box-border-radius: 3px;
   --media-border-radius: 8px;
   --dot-size: 8px;
@@ -17,11 +20,17 @@
   --cell-background-color: #fff;
   --code-background-color: #f9f9f9;
   --secondary-color: #999;
+  /* max-width: 700px; */
 }
 
+:root.dark{
+  --card-bg:#181d24;
+}
+
+ 
 body {
   /* background-color: var(--background-color); */
-  color: var(--foreground-color);
+  /* color: var(--foreground-color); */
   font-family:
     ui-sans-serif,
     system-ui,
@@ -40,10 +49,7 @@ body {
 }
 
 #wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+margin: 0;
 }
 
 #modal {
@@ -105,18 +111,18 @@ a.item-link:hover {
 
 #container {
   width: 100%;
-  max-width: 800px;
-  margin: 0px auto 0px auto;
+  /* max-width: 760px; */
+  /* margin: 0px auto 0px auto; */
   display: flex;
 }
 
 #main-container {
   flex: 1;
-  padding-top: 20px;
+  /* padding-top: 20px;
   padding-right: 30px;
   padding-bottom: 20px;
   margin-right: 20px;
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color); */
 }
 
 #header {
@@ -222,11 +228,18 @@ hr {
 }
 
 .items {
-  margin-top: 20px;
-  margin-left: 28px;
+  /* margin-top: 20px; */
+  /* margin-left: 28px; */
+  
 }
 
 .item {
+  width: 100%;
+  background: #181d24;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .image-box,
@@ -322,7 +335,7 @@ audio::-webkit-media-controls-panel {
 
 .text-box {
   border-left: 2px solid var(--border-color);
-  padding: 30px 0px 30px 30px;
+padding: 20px 0;
   font-size: 16px;
   line-height: 1.6;
   margin-left: 3px;

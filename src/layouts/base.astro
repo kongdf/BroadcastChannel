@@ -69,7 +69,7 @@ const navs = (getEnv(import.meta.env, Astro, 'NAVS') || '')
 ---
 
 <!doctype html>
-<html lang={locale ?? 'zh-cn'}>
+<html lang={locale ?? 'zh-cn'}   class="theme_dark" style="overflow-x: hidden;">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -92,17 +92,9 @@ const navs = (getEnv(import.meta.env, Astro, 'NAVS') || '')
     <Fragment set:html={HEADER_INJECT} />
   </head>
 
-  <body>
-    <div id="wrapper">
-      <div id="container">
-        <div id="main-container">
-          <slot />
-        </div>
-      </div>
-    </div>
-    <a href="#wrapper" id="back-to-top" aria-label="Back to top">
-      <img {...backToTopIcon} alt="Back to Top" />
-    </a>
+  <body style="width: 99%;">
+    <slot />
+ 
     <Fragment set:html={FOOTER_INJECT} />
   </body>
 </html>
